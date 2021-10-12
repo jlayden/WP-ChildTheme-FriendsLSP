@@ -16,16 +16,24 @@ add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
 
 // import BootStrap scripts & styles
 function bootstrap_styles_scripts() {
-    wp_enqueue_script('bootstrap-js', get_stylesheet_directory_uri().'/bootstrap/dist/js/bootstrap.min.js', array('jquery'), NULL, true);
-    wp_enqueue_style('bootstrap-css', get_stylesheet_directory_uri().'/bootstrap/dist/css/bootstrap.min.css', false, NULL, 'all');
+    wp_enqueue_script('bootstrap-js', get_stylesheet_directory_uri().'/dist/bootstrap/dist/js/bootstrap.min.js', array('jquery'), NULL, true);
+    wp_enqueue_style('bootstrap-css', get_stylesheet_directory_uri().'/dist/bootstrap/dist/css/bootstrap.min.css', false, NULL, 'all');
 }
 add_action('wp_enqueue_scripts', 'bootstrap_styles_scripts', PHP_INT_MAX);
 
 //import FontAwesome
 function load_font_awesome() {
-    wp_enqueue_style('font-awesome-css', get_stylesheet_directory_uri().'/fontawesome/css/all.css', false, NULL, 'all');
+    wp_enqueue_style('font-awesome-css', get_stylesheet_directory_uri().'/dist/fontawesome/css/all.css', false, NULL, 'all');
 }
 add_action( 'wp_enqueue_scripts', 'load_font_awesome' );
+
+add_action( 'wp_enqueue_scripts', 'benevolent_child_enqueue_styles' );
+function benevolent_child_enqueue_styles() {
+    wp_enqueue_style( 'child-style', get_stylesheet_uri(),
+        array( 'parenthandle' ), 
+        // wp_get_theme()->get('Version') // this only works if you have Version in the style header
+    );
+}
 
 // import parent theme styles
 // function enqueue_parent_styles() {
