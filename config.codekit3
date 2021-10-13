@@ -17556,6 +17556,36 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/sass\/_colors.sass" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 2,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/sass\/_colors.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/sass\/_layout.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/sass\/_layout.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/sass\/_legacy.sass" : {
       "aP" : 0,
       "bl" : 0,
@@ -17586,13 +17616,43 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/sass\/_typography.sass" : {
+    "\/sass\/_normalize.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
       "dP" : 10,
       "ec" : 1,
-      "ft" : 2,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/sass\/_normalize.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/sass\/_theme.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/sass\/_theme.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/sass\/_typography.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/sass\/_typography.css",
@@ -17660,18 +17720,6 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
-    },
-    "\/sass\/theme.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/sass\/theme-min.css",
-      "oF" : 0,
-      "pg" : 0
     },
     "\/screenshot.png" : {
       "ft" : 32768,

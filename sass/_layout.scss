@@ -1,0 +1,19 @@
+/* #Layout
+================================================== */
+html { text-align: center; }
+body { text-align: left; }
+/*html, body {  height: 100%; min-height: 100%; }*/ //use only if having issues
+
+.obscure { position: absolute; left:-9999px; }
+
+img {
+	max-width:100%;
+	height: auto;
+  	width: auto\9; /* ie8 */
+  	vertical-align:top;
+}
+
+video {
+  width: 100% !important;
+  height: auto !important;
+}
