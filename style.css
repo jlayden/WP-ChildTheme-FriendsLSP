@@ -720,6 +720,7 @@ section {
 ================================================== */
 html {
   text-align: center;
+  margin-top: 32px !important;
 }
 
 body {
@@ -860,24 +861,6 @@ a:hover, a:active {
     margin-bottom: 36px;
   }
 }
-.site-footer .promotional-block .btn-donate:hover {
-  background-color: #0587b8;
-  border: 1px solid #0587b8;
-}
-
-.site-info {
-  background-color: white;
-}
-
-.site-info .copyright {
-  width: 100%;
-  text-align: center;
-}
-
-.site-info .by {
-  display: none;
-}
-
 #primary .page .entry-content h4 {
   font-size: 1.35rem;
 }
@@ -1115,10 +1098,6 @@ nav {
 }
 
 /* Homepage Intro Section*/
-.home .intro {
-  background: none;
-}
-
 .btn-primary {
   background-color: #46bfca;
   border-color: #46bfca;
@@ -1169,11 +1148,22 @@ nav {
 .btn-secondary:hover {
   background-color: #3c8c66;
   border-color: #3c8c66;
+  opacity: 0.75;
 }
 
-.site-header .header-top {
-  padding: 0;
+.btn-donate {
+  background-color: #46bfca;
+  border-color: #46bfca;
+  border-radius: 25px;
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
+.btn-donate:hover {
+  background-color: #46bfca;
+  border-color: #46bfca;
+  opacity: 0.75;
+}
+
 .site-header .header-bottom {
   padding: 25px 0 !important;
 }
@@ -1198,7 +1188,11 @@ nav {
   margin-right: auto;
   float: none;
 }
-.site-header .header-bottom .container ul a {
+.site-header .header-bottom .container .main-navigation ul {
+  margin: 0 auto;
+  line-height: 1;
+}
+.site-header .header-bottom .container .main-navigation ul a {
   color: #FFFFFF;
   text-transform: uppercase;
   text-decoration: none;
@@ -1206,7 +1200,7 @@ nav {
   display: inline-block;
   position: relative;
 }
-.site-header .header-bottom .container ul a:after {
+.site-header .header-bottom .container .main-navigation ul a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -1219,12 +1213,12 @@ nav {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-.site-header .header-bottom .container ul a:hover:after {
+.site-header .header-bottom .container .main-navigation ul a:hover:after {
   width: 100%;
   left: 0;
   right: 0;
 }
-.site-header .btn-donate {
+.site-header .header-bottom .btn-donate {
   background-color: #46bfca;
   border-color: #46bfca;
   border-radius: 25px;
@@ -1232,7 +1226,7 @@ nav {
   order: 3;
   margin-left: auto;
 }
-.site-header .btn-donate:hover {
+.site-header .header-bottom .btn-donate:hover {
   background-color: #46bfca;
   border-color: #46bfca;
   opacity: 0.75;
@@ -1273,7 +1267,9 @@ nav {
   display: none;
 }
 
-/* HERO BANNER */
-.banner .owl-carousel .owl-dots span {
+.home .banner .owl-carousel .owl-dots span {
   border-radius: 50%;
+}
+.home .intro {
+  background: none;
 }
