@@ -1,18 +1,25 @@
 .site-header 
     .header-top 
-        //padding: 0
+        padding: 0
+        margin: 0
     .header-bottom
         padding: 25px 0 !important
         .container
             @include flexbox
             @include justify-content(center)
-            @include align-content(center)
+            @include align-items(center)
             .site-branding
                 margin: 0
                 padding: 0
                 margin-right: auto
                 float: none
             .main-navigation
+                float: unset
+                margin-top: 1rem
+                @include flexbox
+                @include justify-content(center)
+                @include align-items(center)
+
                 ul
                     margin: 0 auto
                     line-height: 1
@@ -23,6 +30,7 @@
                         letter-spacing: 0.15rem
                         display: inline-block
                         position: relative
+                        padding: 0 0 1rem
                         
                     a:after     
                         background: none repeat scroll 0 0 transparent
