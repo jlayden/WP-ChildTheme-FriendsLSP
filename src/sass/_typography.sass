@@ -1,0 +1,85 @@
+// #NOTE
+// html is set to 16px so that all the REM measurements maybe calculated like 20px/16px = 1.25rem 
+html 
+    font-size: 16px 
+
+body 
+    font-size: 1rem // currently ems cause chrome bug misinterpreting rems on body element 
+    line-height: 1.6
+    font-weight: 400
+    font-family: $font-copy
+    text-rendering: optimizelegibility
+    -webkit-font-smoothing: antialiased
+
+h1, h2, h3, h4, h5, h6 
+    margin-top: 0
+    margin-bottom: 2rem
+    font-weight: 300
+    font-family: $font-header
+
+h1  
+    font-size: 4.0rem 
+    line-height: 1.2
+ 
+h2  
+    font-size: 3.6rem 
+    line-height: 1.25
+ 
+h3  
+    font-size: 3.0rem 
+    line-height: 1.3
+ 
+h4  
+    font-size: 2.4rem 
+    line-height: 1.35 
+
+h5  
+    font-size: 1.8rem 
+    line-height: 1.5 
+h6  
+    font-size: 1.5rem 
+    line-height: 1.6 
+
+// Larger than tablet 
+@include tablet 
+    h1  
+        font-size: 5.0rem
+     
+    h2  
+        font-size: 4.2rem
+     
+    h3  
+        font-size: 3.6rem
+     
+    h4  
+        font-size: 3.0rem
+     
+    h5  
+        font-size: 2.4rem
+     
+    h6  
+        font-size: 1.5rem
+     
+p 
+    font-size: 1.125rem
+    margin-top: 0
+    font-family: $font-copy
+
+a 
+    font-size: 1.125rem
+    margin: 0 auto
+
+abbr 
+    font-size: 0.9rem 
+
+strong  
+    font-weight: bold
+
+em  
+    font-style: italic 
+
+sup  
+    font-size: 0.6rem 
+    vertical-align: super 
+    position: relative 
+    top: 1px

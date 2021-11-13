@@ -14,6 +14,12 @@ add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
 
 // END ENQUEUE PARENT ACTION
 
+
+// function benevolent_child_styles() {
+//     wp_enqueue_style( 'benevolent_child-style', get_template_directory_uri() . '/dist/css/style.css' );
+// }
+// add_action( 'wp_enqueue_scripts', 'benevolent_child_styles' );
+
 // import BootStrap scripts & styles
 // function bootstrap_styles_scripts() {
 //     wp_enqueue_script('bootstrap-js', get_stylesheet_directory_uri().'/dist/bootstrap/dist/js/bootstrap.min.js', array('jquery'), NULL, true);
@@ -27,13 +33,6 @@ add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
 // }
 // add_action( 'wp_enqueue_scripts', 'load_font_awesome' );
 
-// add_action( 'wp_enqueue_scripts', 'benevolent_child_enqueue_styles' );
-// function benevolent_child_enqueue_styles() {
-//     wp_enqueue_style( 'child-style', get_stylesheet_uri(),
-//         array( 'parenthandle' ), 
-//         // wp_get_theme()->get('Version') // this only works if you have Version in the style header
-//     );
-// }
 
 // import parent theme styles
 // function enqueue_parent_styles() {
